@@ -42,31 +42,43 @@ namespace ShipInformation
                 } while (ship is null);
 
                 bool continueCommands = true;
+                bool commandIsValid = true;
                 do
                 {
-                    Console.Write("What is your command, Captain?\n» ");
+                    Console.WriteLine("What is your command, Captain?");
+                    if (!commandIsValid)
+                    {
+                        Console.WriteLine("- Move - Stop - (Blow) Horn - Change (Ship) - End -");
+                    }
+                    Console.Write("» ");
                     string commandInput = Console.ReadLine().ToLower().Replace(" ", null);
                     switch (commandInput)
                     {
                         case "move":
+                            commandIsValid = true;
                             ship.Move();
                             break;
                         case "stop":
+                            commandIsValid = true;
                             ship.Stop();
                             break;
                         case "blowhorn":
                         case "horn":
+                            commandIsValid = true;
                             ship.BlowHorn();
                             break;
                         case "changeship":
                         case "change":
+                            commandIsValid = true;
                             continueCommands = false;
                             break;
                         case "end":
+                            commandIsValid = true;
                             continueCommands = false;
                             continueShipping = false;
                             break;
                         default:
+                            commandIsValid = false;
                             Console.WriteLine("ERROR: Invalid command.");
                             break;
                     }
