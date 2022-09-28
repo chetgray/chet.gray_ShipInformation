@@ -35,6 +35,28 @@ namespace ShipInformation
                 }
             } while (ship is null);
 
+            Console.Write("What is your command, Captain?\n» ");
+            string commandInput = Console.ReadLine().ToLower().Replace(" ", null);
+            switch (commandInput)
+            {
+                case "move":
+                    ship.Move();
+                    break;
+                case "stop":
+                    ship.Stop();
+                    break;
+                case "blowhorn":
+                case "horn":
+                    ship.BlowHorn();
+                    break;
+                case "changeship":
+                case "change":
+                case "end":
+                default:
+                    Console.WriteLine("ERROR: Invalid command.");
+                    break;
+            }
+
             Console.ReadKey(intercept: true);
         }
     }
