@@ -31,6 +31,8 @@ namespace ShipInformation
                     case "3":
                     case "skiboat":
                     case "ski":
+                        ship = new SkiBoat();
+                        break;
                     default:
                         Console.WriteLine("ERROR: Invalid ship type selection.");
                         break;
