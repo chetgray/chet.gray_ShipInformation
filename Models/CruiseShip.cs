@@ -18,7 +18,7 @@ namespace ShipInformation.Models
 
         public override void BlowHorn()
         {
-            System.Console.WriteLine("WAAAAAAAAOOOOOOO!");
+            Console.WriteLine("WAAAAAAAAOOOOOOO!");
         }
     }
 }
