@@ -26,6 +26,8 @@ namespace ShipInformation
                     case "2":
                     case "sailboat":
                     case "sail":
+                        ship = new SailBoat();
+                        break;
                     case "3":
                     case "skiboat":
                     case "ski":
