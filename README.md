@@ -48,6 +48,6 @@ Requirements from #211868
 > - [x] If the user enters "Blow Horn" or "Horn", run that ship's BlowHorn().
 > - [x] (The case the user enters the info. in shouldn't matter).
 > - [x] After running the method, again ask, "What is your command, Captain?"
-> - [ ] If the user enters "Change Ship" or "Change" (in any case), ask them
+> - [x] If the user enters "Change Ship" or "Change" (in any case), ask them
 >   what ship type they want again.
 > - [x] Keep going until the user enters "End" (in any case).
