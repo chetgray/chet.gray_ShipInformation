@@ -2,7 +2,7 @@
 
 namespace ShipInformation.Models
 {
-    internal abstract class Ship
+    internal abstract class Ship : IShip
     {
         public virtual void Move()
         {

@@ -7,7 +7,7 @@ namespace ShipInformation
     {
         static void Main()
         {
-            Ship ship = null;
+            IShip ship = null;
 
             do
             {

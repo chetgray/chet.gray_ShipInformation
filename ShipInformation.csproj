@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\CruiseShip.cs" />
+    <Compile Include="Models\IShip.cs" />
     <Compile Include="Models\SailBoat.cs" />
     <Compile Include="Models\Ship.cs" />
     <Compile Include="Models\SkiBoat.cs" />
